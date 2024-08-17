@@ -7,6 +7,8 @@ import Home from '../components/home'
 import Footer from '../components/footer'
 import Register from '../components/Register'
 import Login from '../components/Login'
+import Cart from '../components/Cart';
+
 
 function App() {
 
@@ -14,8 +16,9 @@ function App() {
     <>
       <Producto></Producto>
       {/* <Home></Home> */}
-      <Register></Register>
-      <Login></Login>
+      {/* <Register></Register>
+      <Login></Login> */}
+      <Cart></Cart>
       <Footer></Footer>
       
     </>
