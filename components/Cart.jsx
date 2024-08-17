@@ -24,7 +24,7 @@ function Cart() {
   .filter(item => item.count > 0)
   .map(item => (
     <li key={item.id}>
-      {item.name} (x{item.count}) - ${item.price * item.count}
+      {item.name} ({item.count}) - ${item.price * item.count}
     </li>
   ));
 
@@ -48,7 +48,7 @@ function Cart() {
           </Col>
         ))}
       </Row>
-      <h3 className="mt-2">Pizzas compradas:</h3>
+      <h3 className="mt-2">Pizzas:</h3>
       <ul>
         {purchasedPizzas.length > 0 ? purchasedPizzas : <li >Sin pizzas en el carrito</li>}
       </ul>
